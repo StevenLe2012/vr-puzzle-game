@@ -1,23 +1,25 @@
 {
   "dependencies": {
     "com.cyberhub.foundry.core": {
-      "version": "file:E:/Steven Le/GitHub/FoundryCore/package",
+      "version": "https://github.com/FoundryXR/FoundryCore.git?path=package",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.inputsystem": "1.6.1",
         "com.unity.textmeshpro": "3.0.6",
         "com.unity.xr.management": "4.3.1",
         "com.unity.xr.openxr": "1.8.2"
-      }
+      },
+      "hash": "19e78717553a302b6ded5dfaeaa4c77103585e26"
     },
     "com.cyberhub.foundry.networking.fusion": {
-      "version": "file:E:/Steven Le/GitHub/FusionNetworkProvider/package",
+      "version": "https://github.com/FoundryXR/FusionNetworkProvider.git?path=package",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.cyberhub.foundry.core": "0.2.1-preview"
-      }
+      },
+      "hash": "84440c8650ef3566b1b8a14ea4812c6abe6fe22f"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -55,6 +57,15 @@
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.cinemachine": {
+      "version": "2.8.9",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31"
       },
       "url": "https://packages.unity.com"
     },
