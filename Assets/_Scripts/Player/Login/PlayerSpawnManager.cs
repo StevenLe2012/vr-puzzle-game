@@ -56,6 +56,7 @@ public class PlayerSpawnManager : NetworkComponent
     private void SpawnP2()
     {
         transform.position = _playerSpawnPointsManager.SpawnPointP2.position;
+        Invoke(nameof(MakeTopDownCharacter), 1f);
         AvatarSpawned = 2;
     }
     
@@ -81,8 +82,22 @@ public class PlayerSpawnManager : NetworkComponent
 
     private void MakeOverLord()
     {
-        var controlRig = GetComponentInChildren<IPlayerControlRig>();
-        if (controlRig == null) throw new Exception("Could not find control rig");
-        controlRig.transform.localScale = scaleP1;
+        // Set starting scale
+        // var controlRig = GetComponentInChildren<IPlayerControlRig>();
+        // if (controlRig == null) throw new Exception("Could not find control rig");
+        // controlRig.transform.localScale = scaleP1;
+        
+        // enable scaling
+        var playerScale = GetComponent<PlayerScale>();
+        if (playerScale == null) throw new Exception("Could not find player scale");
+        playerScale.enabled = true;
+    }
+    
+    private void MakeTopDownCharacter()
+    {
+        // enable jumping
+        var playerJump = GetComponent<PlayerJump>();
+        if (playerJump == null) throw new Exception("Could not find player jump");
+        playerJump.enabled = true;
     }
 }

@@ -396,6 +396,14 @@ MonoBehaviour:
         m_Groups: 
         m_Action: Right Primary Button Pressed
         m_Flags: 0
+      - m_Name: 
+        m_Id: 954bc44e-5dae-49e8-a8cd-5cc9aa7e58e3
+        m_Path: <Keyboard>/space
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Primary Button Pressed
+        m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: 0}
   RightSecondaryButtonPressed:

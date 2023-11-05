@@ -6755,6 +6755,7 @@ GameObject:
   - component: {fileID: 4167082872618027384}
   - component: {fileID: 6337070952767334794}
   - component: {fileID: 106399444864319959}
+  - component: {fileID: 599952644331740560}
   m_Layer: 6
   m_Name: NetworkPlayer
   m_TagString: Untagged
@@ -6808,6 +6809,7 @@ MonoBehaviour:
   - {fileID: 4167082872618027384}
   - {fileID: 6337070952767334794}
   - {fileID: 106399444864319959}
+  - {fileID: 599952644331740560}
   - {fileID: 6498952995433233785}
   - {fileID: 3876774363744170834}
   - {fileID: 2697024755991727787}
@@ -6840,7 +6842,7 @@ MonoBehaviour:
   movementSettings:
     speed: 3
     sprintSpeed: 0
-    downforce: 0.1
+    downforce: 0
     headPadding: 0.2
   leftHand: {fileID: 4105830463922675902}
   rightHand: {fileID: 2493267994147770751}
@@ -6949,7 +6951,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8212816606896819904}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6307c91925f649342bf28906514f2105, type: 3}
   m_Name: 
@@ -6957,6 +6959,22 @@ MonoBehaviour:
   movementEnabled: 1
   verticalMovementSpeed: 3
   verticalScaleAmount: 3
+--- !u!114 &599952644331740560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8212816606896819904}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a995a9deeb2f692448c39ba27261a9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpHeight: 2
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &8279761453518922694
 GameObject:
   m_ObjectHideFlags: 0

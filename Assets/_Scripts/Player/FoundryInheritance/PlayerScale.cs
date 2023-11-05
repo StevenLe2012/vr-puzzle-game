@@ -6,8 +6,7 @@ using Foundry.Networking;
 using UnityEngine;
 // using Avatar = Foundry.Avatar;
 
-[RequireComponent(typeof(CharacterController))]
-public class MyPlayerButtonPress : NetworkComponent
+public class PlayerScale : NetworkComponent
 {
     // [Header("Avatar")]
     // public Avatar avatar;
@@ -16,13 +15,14 @@ public class MyPlayerButtonPress : NetworkComponent
     [SerializeField] private float verticalMovementSpeed = 3f;
     [SerializeField] private float verticalScaleAmount = 3f;
     
+    private ButtonInputManager _buttonInput;
     private IPlayerControlRig controlRig;
-    private CharacterController controller;
     
     private NetworkProperty<TrackingMode> trackingMode = new NetworkProperty<TrackingMode>(TrackingMode.OnePoint);
     
     private NetworkProperty<Vector3> virtualScale = new(Vector3.zero);
-    
+    private CharacterController controller;
+
     public override void RegisterProperties(List<INetworkProperty> properties)
     {
         properties.Add(trackingMode);
@@ -37,8 +37,12 @@ public class MyPlayerButtonPress : NetworkComponent
     private void Start()
     {
         // If this is an offline local player we can just borrow the rig
+        _buttonInput = ButtonInputManager.Instance;
         if (!NetworkManager.instance)
             BorrowControlRig();
+        
+        controller.Move(new Vector3(0, 10, 0));
+        virtualScale.Value = new Vector3(0, 10, 0);
     }
     
     public void Update()
@@ -87,49 +91,31 @@ public class MyPlayerButtonPress : NetworkComponent
 
     public void Move(Vector3 movement, float deltaTime)
     {
-        // controller.Move(movement * deltaTime);
-        // virtualVelocity.Value = movement;
-        controlRig.transform.localScale += movement * deltaTime;
+        controller.Move(movement * deltaTime);
         virtualScale.Value = movement;
+        // controlRig.transform.localScale += movement * deltaTime;
+        // virtualScale.Value = movement;
     }
     
     public Vector3 GetVerticalMovement()
     {
         if (controlRig == null)
             return Vector3.zero;
-        var buttonInput = ButtonInputManager.Instance;
-        bool rightPrimaryButtonPressed = buttonInput.isRightPrimaryButtonPressed;
-        bool rightSecondaryButtonPressed = buttonInput.isRightSecondaryButtonPressed;
-        // Vector3 movement = new Vector3(0, 0, 0);
+        bool rightPrimaryButtonPressed = _buttonInput.isRightPrimaryButtonPressed;
+        bool rightSecondaryButtonPressed = _buttonInput.isRightSecondaryButtonPressed;
         Vector3 scaleAmount = Vector3.zero;
-        // Quaternion movementReferenceRot = Quaternion.identity;
 
         if (rightPrimaryButtonPressed)
         {
-            // movement = new Vector3(0, verticalMovementSpeed, 0);
-            scaleAmount = ChangeScale(verticalScaleAmount);
+            // scaleAmount = new Vector3(verticalScaleAmount, verticalScaleAmount, verticalScaleAmount);
+            scaleAmount = new Vector3(0, verticalScaleAmount, 0);
         }
         if (rightSecondaryButtonPressed)
         {
-            // movement = new Vector3(0, -verticalMovementSpeed, 0);
-            scaleAmount = ChangeScale(-verticalScaleAmount);
+            // scaleAmount = new Vector3(-verticalScaleAmount, -verticalScaleAmount, -verticalScaleAmount);
+            scaleAmount = new Vector3(0, -verticalScaleAmount, 0);
         }
         
-        if (rightPrimaryButtonPressed || rightSecondaryButtonPressed)
-        {
-            print("scaleAmount: " + scaleAmount);
-        }
-        // movement = Quaternion.AngleAxis(movementReferenceRot.eulerAngles.y, Vector3.up) * movement;
         return scaleAmount;
-    }
-
-
-    public Vector3 ChangeScale(float scaleAmount)
-    {
-        if (controlRig == null) throw new Exception("Could not find control rig");
-        // var curScale = controlRig.transform.localScale;
-        // print(scaleAmount);
-        // return new Vector3(curScale.x + scaleAmount, curScale.y + scaleAmount, curScale.z + scaleAmount);
-        return new Vector3(scaleAmount, scaleAmount, scaleAmount);
     }
 }
