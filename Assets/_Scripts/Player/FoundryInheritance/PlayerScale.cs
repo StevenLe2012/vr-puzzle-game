@@ -16,7 +16,7 @@ public class PlayerScale : NetworkComponent
     [SerializeField] private float verticalScaleAmount = 3f;
     
     private ButtonInputManager _buttonInput;
-    private IPlayerControlRig controlRig;
+    // private IPlayerControlRig controlRig;
     
     private NetworkProperty<TrackingMode> trackingMode = new NetworkProperty<TrackingMode>(TrackingMode.OnePoint);
     
@@ -38,8 +38,8 @@ public class PlayerScale : NetworkComponent
     {
         // If this is an offline local player we can just borrow the rig
         _buttonInput = ButtonInputManager.Instance;
-        if (!NetworkManager.instance)
-            BorrowControlRig();
+        // if (!NetworkManager.instance)
+        //     BorrowControlRig();
         
         controller.Move(new Vector3(0, 10, 0));
         virtualScale.Value = new Vector3(0, 10, 0);
@@ -51,42 +51,42 @@ public class PlayerScale : NetworkComponent
             Move(GetVerticalMovement(), Time.deltaTime);
     }
     
-    public override void OnConnected()
-    {
-        if(IsOwner)
-            BorrowControlRig();
-    }
+    // public override void OnConnected()
+    // {
+    //     if(IsOwner)
+    //         BorrowControlRig();
+    // }
     
-    private void LoadControlRig()
-    {
-        controlRig.transform.SetParent(transform, false);
-        controlRig.transform.localPosition = Vector3.zero;
-        controlRig.transform.localRotation = Quaternion.identity;
-            
-        //If this is a desktop rig, change the camera mode
-        if(controlRig is DesktopControlRig)
-            ((DesktopControlRig)controlRig).SetCameraMode(DesktopControlRig.CameraMode.Look);
-            
-        trackingMode.Value = controlRig.GetTrackingMode();
-    }
+    // private void LoadControlRig()
+    // {
+    //     controlRig.transform.SetParent(transform, false);
+    //     controlRig.transform.localPosition = Vector3.zero;
+    //     controlRig.transform.localRotation = Quaternion.identity;
+    //         
+    //     //If this is a desktop rig, change the camera mode
+    //     if(controlRig is DesktopControlRig)
+    //         ((DesktopControlRig)controlRig).SetCameraMode(DesktopControlRig.CameraMode.Look);
+    //         
+    //     trackingMode.Value = controlRig.GetTrackingMode();
+    // }
     
-    public void BorrowControlRig()
-    {
-        var rigManager = FoundryApp.GetService<IPlayerRigManager>();
-        if (rigManager.Rig != null)
-        {
-            controlRig = rigManager.BorrowPlayerRig();
-            LoadControlRig();
-        }
-        else
-        {
-            rigManager.PlayerRigCreated += rig =>
-            {
-                controlRig = rigManager.BorrowPlayerRig();
-                LoadControlRig();
-            };
-        }
-    }
+    // public void BorrowControlRig()
+    // {
+    //     var rigManager = FoundryApp.GetService<IPlayerRigManager>();
+    //     if (rigManager.Rig != null)
+    //     {
+    //         controlRig = rigManager.BorrowPlayerRig();
+    //         LoadControlRig();
+    //     }
+    //     else
+    //     {
+    //         rigManager.PlayerRigCreated += rig =>
+    //         {
+    //             controlRig = rigManager.BorrowPlayerRig();
+    //             LoadControlRig();
+    //         };
+    //     }
+    // }
 
 
     public void Move(Vector3 movement, float deltaTime)
@@ -99,8 +99,8 @@ public class PlayerScale : NetworkComponent
     
     public Vector3 GetVerticalMovement()
     {
-        if (controlRig == null)
-            return Vector3.zero;
+        // if (controlRig == null)
+        //     return Vector3.zero;
         bool rightPrimaryButtonPressed = _buttonInput.isRightPrimaryButtonPressed;
         bool rightSecondaryButtonPressed = _buttonInput.isRightSecondaryButtonPressed;
         Vector3 scaleAmount = Vector3.zero;

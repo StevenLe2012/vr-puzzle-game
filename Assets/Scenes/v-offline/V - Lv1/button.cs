@@ -27,10 +27,4 @@ public class button : MonoBehaviour
         // players need to have BOTH buttons pressed to trigger the sliding door
         buttonTriggered = true;
     }
-
-    private void Update()
-    {
-        
-    }
-
 }

@@ -9,7 +9,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerJump : NetworkComponent
 {
-    [SerializeField] private float jumpHeight = 2f;
+    [SerializeField] private float jumpHeight = 1f;
     [SerializeField] private LayerMask groundLayers;
 
     private float _gravity = Physics.gravity.y;

@@ -136,6 +136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever
       objectReference: {fileID: 0}
+    - target: {fileID: 3174963797306147206, guid: 6ff3b4c88d1e29244bd02eeb3be4432a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3174963797306147207, guid: 6ff3b4c88d1e29244bd02eeb3be4432a,
         type: 3}
       propertyPath: m_RootOrder
@@ -593,6 +598,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NetworkManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197235959711675712, guid: 384a8589ed4fd7d489eea6f78b4c10f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2197235959711675716, guid: 384a8589ed4fd7d489eea6f78b4c10f5,
         type: 3}
