@@ -48,6 +48,7 @@ public class PlayerSpawnManager : NetworkComponent
     private void SpawnP1()
     {
         transform.position = _playerSpawnPointsManager.SpawnPointP1.position;
+        SetGameLayerRecursive(gameObject, LayerMask.NameToLayer("FoundryPlayer1"));
         Invoke(nameof(MakeOverLord), 1f);
         AvatarSpawned = 1;
     }
@@ -56,6 +57,7 @@ public class PlayerSpawnManager : NetworkComponent
     private void SpawnP2()
     {
         transform.position = _playerSpawnPointsManager.SpawnPointP2.position;
+        SetGameLayerRecursive(gameObject, LayerMask.NameToLayer("FoundryPlayer2"));
         Invoke(nameof(MakeTopDownCharacter), 1f);
         AvatarSpawned = 2;
     }
@@ -99,5 +101,20 @@ public class PlayerSpawnManager : NetworkComponent
         var playerJump = GetComponent<PlayerJump>();
         if (playerJump == null) throw new Exception("Could not find player jump");
         playerJump.enabled = true;
+    }
+    
+    
+    private void SetGameLayerRecursive(GameObject _go, int _layer)
+    {
+        _go.layer = _layer;
+        foreach (Transform child in _go.transform)
+        {
+            child.gameObject.layer = _layer;
+ 
+            Transform _HasChildren = child.GetComponentInChildren<Transform>();
+            if (_HasChildren != null)
+                SetGameLayerRecursive(child.gameObject, _layer);
+             
+        }
     }
 }
