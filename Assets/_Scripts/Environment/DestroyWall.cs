@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using Foundry.Networking;
 using UnityEngine;
 
-public class DestroyWall : NetworkComponent
+public class DestroyWall : NetworkComponent // then i can change to monobehvaior.
 {
-    private NetworkProperty<int> _buttonsHeldDownTillWallBreaks = new(2);
+    private NetworkProperty<int> _buttonsHeldDownTillWallBreaks = new(0);  // after syncronizing event, i dont need to network this anymore. they both check locally if this number is greater than 2 than destroy wall.
     public int ButtonsHeldDownTillWallBreaks = 2;
     
     [HideInInspector]

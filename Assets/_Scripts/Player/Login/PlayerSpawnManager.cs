@@ -32,7 +32,7 @@ public class PlayerSpawnManager : NetworkComponent
     // Start is called before the first frame update
     void Start()
     {
-        _playerSpawnPointsManager = PlayerSpawnPointsManager.GetInstance();
+        _playerSpawnPointsManager = PlayerSpawnPointsManager.Instance;
         if (PlayerPrefs.GetInt("PlayerRole") == 1)
         {
             SpawnP1();

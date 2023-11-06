@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class PushPad : MonoBehaviour
 {
-    public UnityEvent OnPadPushed;
+    public UnityEvent OnPadPushed;  // do networkedevents. this will syncronise the push pads pushing down as well!
     public UnityEvent OnPadRetracted;
 
     [SerializeField] private float waitForSecondsTillPadTakesEffect = 1.5f;
