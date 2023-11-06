@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2290908197955660273}
   - component: {fileID: 1383154799900077604}
   - component: {fileID: 2121169410917820650}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_PolygonPrototype_Prop_Crate_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,9 +230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
-  InterpolationSpace: 0
+  InterpolationSpace: 1
   InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
+  InterpolateErrorCorrection: 0
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
     MaxRate: 10
