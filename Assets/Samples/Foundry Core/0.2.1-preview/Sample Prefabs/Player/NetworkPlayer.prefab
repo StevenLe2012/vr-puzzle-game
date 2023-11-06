@@ -6974,7 +6974,7 @@ MonoBehaviour:
   jumpHeight: 2
   groundLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 129
 --- !u!1 &8279761453518922694
 GameObject:
   m_ObjectHideFlags: 0
@@ -7359,6 +7359,11 @@ PrefabInstance:
       propertyPath: primaryHand
       value: 
       objectReference: {fileID: 2493267994147770751}
+    - target: {fileID: 1989341725322425816, guid: 1029fc9ea437c7744adab817e150cd10,
+        type: 3}
+      propertyPath: layers.m_Bits
+      value: 14775
+      objectReference: {fileID: 0}
     - target: {fileID: 4270156163142399633, guid: 1029fc9ea437c7744adab817e150cd10,
         type: 3}
       propertyPath: m_RootOrder

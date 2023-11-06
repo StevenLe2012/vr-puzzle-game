@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2128049832, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: playerRole
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: YellowBox
@@ -62,6 +66,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4ebe026b9542e4840ba5060916e65b20, type: 2}
     - target: {fileID: 7066323111916325628, guid: 5527826a6315a224d850675a730c4f62,
         type: 3}
+      propertyPath: Flags
+      value: 2305
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066323111916325628, guid: 5527826a6315a224d850675a730c4f62,
+        type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
       value: 8387557904513645956
       objectReference: {fileID: 0}
@@ -72,32 +81,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5527826a6315a224d850675a730c4f62, type: 3}
---- !u!1 &4387414664391132692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62,
-    type: 3}
-  m_PrefabInstance: {fileID: 4386719895320792182}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4335635349767984307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4387414664391132692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectInterest: 1
-  DefaultInterestGroups: []
-  DestroyWhenStateAuthorityLeaves: 0
-  AllowStateAuthorityOverride: 1
-  AoiPositionSource: {fileID: 0}
-  Flags: 2305
-  NetworkGuid:
-    RawGuidValue: 843d8e9779976674785db0dc8b9391f1
-  NestedObjects: []
-  NetworkedBehaviours: []
-  SimulationBehaviours: []

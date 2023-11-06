@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2290908197955660273}
   - component: {fileID: 1383154799900077604}
   - component: {fileID: 2121169410917820650}
+  - component: {fileID: 2128049832}
   m_Layer: 7
   m_Name: SM_PolygonPrototype_Prop_Crate_03
   m_TagString: Untagged
@@ -216,7 +217,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &2121169410917820650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,3 +246,16 @@ MonoBehaviour:
     RotTeleportRadians: 1.5
   UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
+--- !u!114 &2128049832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118085362977378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d10d31f7ab3f45b6339d2172b3af3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRole: 0
