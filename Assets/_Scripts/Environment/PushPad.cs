@@ -31,7 +31,7 @@ public class PushPad : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == triggerLayer) // Make sure it's the player that triggers the event
+        if (_isOnPad && ((1 << other.gameObject.layer) & triggerLayer.value) != 0) // Make sure it's the player that triggers the event
         {
             _isOnPad = false;
             if (_waitCoroutine != null)
