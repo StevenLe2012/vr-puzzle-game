@@ -1,12 +1,15 @@
 using System;
 using System.Collections;
+using Foundry;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class PushPad : MonoBehaviour
 {
-    public UnityEvent OnPadPushed;  // do networkedevents. this will syncronise the push pads pushing down as well!
-    public UnityEvent OnPadRetracted;
+    public NetworkEvent<bool> OnPadPushedEvent;
+    public NetworkEvent<bool> OnPadRetractedEvent;
+    // public UnityEvent OnPadPushed;  // do networkedevents. this will syncronise the push pads pushing down as well!
+    // public UnityEvent OnPadRetracted;
 
     [SerializeField] private float waitForSecondsTillPadTakesEffect = 1.5f;
     [SerializeField] private LayerMask triggerLayer;
@@ -17,7 +20,6 @@ public class PushPad : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Entered Triggered");  // NOT WORKING RN NOT ACTIVIATING TRIGGER
         if (!_isOnPad && ((1 << other.gameObject.layer) & triggerLayer.value) != 0)  // Make sure it's the player that triggers the event
         {
             print("Correct Object Triggered");
@@ -29,7 +31,6 @@ public class PushPad : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        print("Layer is: " + other.gameObject.layer);
         if (other.gameObject.layer == triggerLayer) // Make sure it's the player that triggers the event
         {
             _isOnPad = false;
@@ -40,7 +41,7 @@ public class PushPad : MonoBehaviour
                 transform.position += Vector3.up * moveDistance;
             }
             
-            OnPadRetracted?.Invoke();
+            OnPadRetractedEvent?.Invoke(true);
         }
     }
 
@@ -49,15 +50,15 @@ public class PushPad : MonoBehaviour
         yield return new WaitForSeconds(waitForSecondsTillPadTakesEffect);
         if (_isOnPad)
         {
-            CompleteLevel();
+            CompleteAction();
         }
     }
 
-    private void CompleteLevel()
+    private void CompleteAction()
     {
         if (_isOnPad)
         {
-            OnPadPushed?.Invoke();
+            OnPadPushedEvent?.Invoke(true);
         }
     }
 }
