@@ -2265,46 +2265,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 173726093346304956, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-        type: 3}
-      propertyPath: OnPadPushedEvent._event.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 173726093346304956, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-        type: 3}
-      propertyPath: OnPadPushed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TriggerNextSelectedSceneForAll
-      objectReference: {fileID: 0}
-    - target: {fileID: 173726093346304956, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-        type: 3}
-      propertyPath: OnPadPushedEvent._event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 173726093346304956, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-        type: 3}
-      propertyPath: OnPadPushedEvent._event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 173726093346304952}
-    - target: {fileID: 173726093346304956, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-        type: 3}
-      propertyPath: OnPadPushedEvent._event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 173726093346304956, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-        type: 3}
-      propertyPath: OnPadPushedEvent._event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeToSelectScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 173726093346304956, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-        type: 3}
-      propertyPath: OnPadPushedEvent._event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ChangeScene, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 173726093346304956, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-        type: 3}
-      propertyPath: OnPadPushedEvent._event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6809451504123083948, guid: fbbd8ae636ea0114aa7d0c262a916c69,
         type: 3}
       propertyPath: m_RootOrder
@@ -2367,18 +2327,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbbd8ae636ea0114aa7d0c262a916c69, type: 3}
---- !u!114 &173726093346304952 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 173726093346304957, guid: fbbd8ae636ea0114aa7d0c262a916c69,
-    type: 3}
-  m_PrefabInstance: {fileID: 173726093346304951}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 323b51aceafb6654d9ac597d16e4be9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4461742045296703468
 PrefabInstance:
   m_ObjectHideFlags: 0
