@@ -6830,7 +6830,7 @@ MonoBehaviour:
   movementSettings:
     speed: 3
     sprintSpeed: 0
-    downforce: 0
+    downforce: 0.1
     headPadding: 0.2
   leftHand: {fileID: 4105830463922675902}
   rightHand: {fileID: 2493267994147770751}
@@ -6923,7 +6923,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8212816606896819904}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 623058f89701310418483ea310a9105a, type: 3}
   m_Name: 
