@@ -1068,6 +1068,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FoundryPersistent
       objectReference: {fileID: 0}
+    - target: {fileID: 2749485335300527954, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: lookSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60d7a93c17943204388265df9708976f, type: 3}
 --- !u!1 &1460531369 stripped
@@ -1132,7 +1137,7 @@ MonoBehaviour:
         m_Flags: 0
       - m_Name: 
         m_Id: 64b2231b-d033-43ac-a66e-1fc158f0c472
-        m_Path: <Keyboard>/j
+        m_Path: <Keyboard>/k
         m_Interactions: 
         m_Processors: 
         m_Groups: 
@@ -1168,7 +1173,15 @@ MonoBehaviour:
         m_Flags: 0
       - m_Name: 
         m_Id: 11a9b0e5-f86c-4eb1-92ea-a6e8aca8dc0e
-        m_Path: <Keyboard>/k
+        m_Path: <Keyboard>/j
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Secondary Button Pressed
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 1e3c49c1-cea2-47f5-a88b-ede89df9b7a5
+        m_Path: <Keyboard>/leftShift
         m_Interactions: 
         m_Processors: 
         m_Groups: 

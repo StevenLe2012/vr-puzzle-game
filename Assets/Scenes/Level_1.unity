@@ -1789,6 +1789,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: guid
+      value: 7ac3400e-1af6-4eeb-90d2-7f3a89345398
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: NetworkComponents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: BlueBox (1)
@@ -1836,21 +1844,6 @@ PrefabInstance:
     - target: {fileID: 4035765028099436, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066323111916325628, guid: 5527826a6315a224d850675a730c4f62,
-        type: 3}
-      propertyPath: Flags
-      value: 2561
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066323111916325628, guid: 5527826a6315a224d850675a730c4f62,
-        type: 3}
-      propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
-      value: -2936247807546721344
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066323111916325628, guid: 5527826a6315a224d850675a730c4f62,
-        type: 3}
-      propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
-      value: 8037164794335691676
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5527826a6315a224d850675a730c4f62, type: 3}
@@ -3312,9 +3305,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: guid
+      value: 95de89ff-4428-4d1b-98f8-91808db63c63
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: BlueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4035765028099436, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_RootOrder
@@ -3942,20 +3943,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4335635349767984307, guid: 843d8e9779976674785db0dc8b9391f1,
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
-      propertyPath: Flags
-      value: 2561
+      propertyPath: guid
+      value: c5167b84-dbd5-4c19-8318-293cad3020c5
       objectReference: {fileID: 0}
-    - target: {fileID: 4335635349767984307, guid: 843d8e9779976674785db0dc8b9391f1,
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
-      propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
-      value: 3264301411835369403
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335635349767984307, guid: 843d8e9779976674785db0dc8b9391f1,
-        type: 3}
-      propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
-      value: 2703372404028426124
+      propertyPath: NetworkComponents.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
@@ -4016,21 +4012,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6841071113583969930, guid: 843d8e9779976674785db0dc8b9391f1,
-        type: 3}
-      propertyPath: Flags
-      value: 2561
-      objectReference: {fileID: 0}
-    - target: {fileID: 6841071113583969930, guid: 843d8e9779976674785db0dc8b9391f1,
-        type: 3}
-      propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
-      value: -6754351633179323295
-      objectReference: {fileID: 0}
-    - target: {fileID: 6841071113583969930, guid: 843d8e9779976674785db0dc8b9391f1,
-        type: 3}
-      propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
-      value: -6031325385908984681
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 843d8e9779976674785db0dc8b9391f1, type: 3}
@@ -4378,10 +4359,20 @@ PrefabInstance:
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
       value: 2703372404028426124
       objectReference: {fileID: 0}
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
+        type: 3}
+      propertyPath: guid
+      value: 476ab977-f02e-4d26-bfac-96d8685e5c11
+      objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
       propertyPath: m_Name
       value: YellowBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4390609418838448410, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}

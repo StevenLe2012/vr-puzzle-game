@@ -6945,8 +6945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementEnabled: 1
-  verticalMovementSpeed: 3
-  verticalScaleAmount: 3
+  verticalScaleAmount: 5
 --- !u!114 &7892032030458634887
 MonoBehaviour:
   m_ObjectHideFlags: 0

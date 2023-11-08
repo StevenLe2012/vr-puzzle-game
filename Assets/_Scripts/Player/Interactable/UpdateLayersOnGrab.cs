@@ -37,18 +37,6 @@ public class UpdateLayersOnGrab : NetworkComponent
         _layerIndex.OnValueChanged += layerIndex=>
         {
             print($"value of {gameObject.name} was changed to: {layerIndex}");
-            // if (layerIndex == LayerMask.NameToLayer("FoundryPlayer1"))
-            // {
-            //     gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable1");
-            // }
-            // else if (layerIndex == LayerMask.NameToLayer("FoundryPlayer2"))
-            // {
-            //     gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable2");
-            // }
-            // else if (layerIndex == LayerMask.NameToLayer("FoundryGrabbable"))
-            // {
-            //     gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable");
-            // }
             gameObject.layer = layerIndex;
             
         };
@@ -75,40 +63,37 @@ public class UpdateLayersOnGrab : NetworkComponent
 
     public void UpdateLayerBeforeGrab(SpatialHand spatialhand, SpatialGrabbable spatialGrabbable)
     {
-        if (IsOwner)
+        if (playerRole == PlayerRole.Player1)
         {
-            if (playerRole == PlayerRole.Player1)
+            if (spatialhand.gameObject.layer != LayerMask.NameToLayer("FoundryPlayer1"))
             {
-                if (spatialhand.gameObject.layer != LayerMask.NameToLayer("FoundryPlayer1"))
-                {
-                    print("Picked up by invalid player");
-                    spatialhand.CancelGrab();
-                    return;
-                }
-            
-                print("Grabbed by player 1");
-                // gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable1");
-                print("LayerIndex Before Player 1: " + LayerIndex);
-                LayerIndex = LayerMask.NameToLayer("FoundryGrabbable1");
-                gameObject.layer = LayerIndex;
-                print("LayerIndex After Player 1: " + LayerIndex);
+                print("Picked up by invalid player");
+                spatialhand.CancelGrab();
+                return;
             }
-            else
+        
+            print("Grabbed by player 1");
+            gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable1");
+            print("LayerIndex Before Player 1: " + LayerIndex);
+            LayerIndex = LayerMask.NameToLayer("FoundryGrabbable1");
+            gameObject.layer = LayerIndex;
+            print("LayerIndex After Player 1: " + LayerIndex);
+        }
+        else
+        {
+            if (spatialhand.gameObject.layer != LayerMask.NameToLayer("FoundryPlayer2"))
             {
-                if (spatialhand.gameObject.layer != LayerMask.NameToLayer("FoundryPlayer2"))
-                {
-                    print("Picked up by invalid player");
-                    spatialhand.CancelGrab();
-                    return;
-                }
-            
-                print("Grabbed by player 2");
-                // gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable2");
-                print("LayerIndex Before Player 2: " + LayerIndex);
-                LayerIndex = LayerMask.NameToLayer("FoundryGrabbable2");
-                gameObject.layer = LayerIndex;
-                print("LayerIndex After Player 2: " + LayerIndex);
+                print("Picked up by invalid player");
+                spatialhand.CancelGrab();
+                return;
             }
+        
+            print("Grabbed by player 2");
+            gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable2");
+            print("LayerIndex Before Player 2: " + LayerIndex);
+            LayerIndex = LayerMask.NameToLayer("FoundryGrabbable2");
+            gameObject.layer = LayerIndex;
+            print("LayerIndex After Player 2: " + LayerIndex);
         }
         
     }
@@ -116,7 +101,7 @@ public class UpdateLayersOnGrab : NetworkComponent
     public void UpdateLayerAfterGrab(SpatialHand arg0, SpatialGrabbable arg1)
     {
         print("Returned grab layer");
-        // gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable");
+        gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable");
         print("LayerIndex Before Return: " + LayerIndex);
         LayerIndex = LayerMask.NameToLayer("FoundryGrabbable");
         gameObject.layer = LayerIndex;

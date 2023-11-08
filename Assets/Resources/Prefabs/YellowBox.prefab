@@ -33,15 +33,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4035765028099436, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.77
+      value: -0.9399996
       objectReference: {fileID: 0}
     - target: {fileID: 4035765028099436, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4035765028099436, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.89
+      value: -1.4899998
       objectReference: {fileID: 0}
     - target: {fileID: 4035765028099436, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_LocalRotation.w
@@ -79,7 +79,7 @@ PrefabInstance:
     - target: {fileID: 1383154799900077604, guid: 5527826a6315a224d850675a730c4f62,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1383154799900077604, guid: 5527826a6315a224d850675a730c4f62,
         type: 3}
@@ -157,76 +157,7 @@ MonoBehaviour:
   NetworkComponents:
   - {fileID: 4386719894722652078}
   - {fileID: 9158699808104942377}
-  guid: 99963c38-9237-476e-a0ae-7ad94d98ef6b
---- !u!114 &7264778247222485470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4387414664391132692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e63ff2941867594e94d54bc10fa69b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
-  startHighlightColor: {r: 1, g: 1, b: 1, a: 1}
-  endHighlightColor: {r: 1, g: 1, b: 1, a: 1}
-  highlightColorCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  highlightWidth: 7
-  highlightWidthCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  highlightTime: 0.35
-  unhighlightTime: 0.2
+  guid: 1c683199-f37f-4362-ad0b-73bc070e1d35
 --- !u!114 &9158699808104942377 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4898507317197440863, guid: 5527826a6315a224d850675a730c4f62,
