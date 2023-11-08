@@ -23,7 +23,12 @@ public class UpdateLayersOnGrab : NetworkComponent
         get => _layerIndex.Value;
         set => _layerIndex.Value = value;
     }
-    
+
+    private void Start()
+    {
+        LayerIndex = LayerMask.NameToLayer("FoundryGrabbable");
+    }
+
     /* RegisterProperties is called once when the component is added to the networked object on Awake,
      * this is where we connect up all our properties.*/
     public override void RegisterProperties(List<INetworkProperty> props)

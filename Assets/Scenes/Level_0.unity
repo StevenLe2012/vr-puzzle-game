@@ -2442,7 +2442,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: guid
-      value: 633e9fe2-7566-4b41-b50a-214cca3c75e7
+      value: 542bab00-58cf-4623-9535-d7dd3cac3905
       objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
@@ -2907,16 +2907,6 @@ PrefabInstance:
         type: 3}
       propertyPath: guid
       value: 8f073aaf-56a8-4718-bfd2-156a7b3f7248
-      objectReference: {fileID: 0}
-    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
-        type: 3}
-      propertyPath: NetworkComponents.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
-        type: 3}
-      propertyPath: NetworkComponents.Array.data[2]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}

@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 23635924190403392}
   - component: {fileID: 64851974674556490}
   - component: {fileID: 8423389740275329895}
-  - component: {fileID: 2290908197955660273}
   - component: {fileID: 1383154799900077604}
-  - component: {fileID: 2128049832}
   - component: {fileID: 1604922328}
   - component: {fileID: 1604922329}
+  - component: {fileID: 5646061255479091971}
+  - component: {fileID: 4898507317197440863}
   m_Layer: 7
   m_Name: SM_PolygonPrototype_Prop_Crate_03
   m_TagString: Untagged
@@ -125,7 +125,19 @@ MonoBehaviour:
       m_Calls: []
   OnGrabEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1604922329}
+        m_TargetAssemblyTypeName: Foundry.Networking.NetworkObject, Foundry.Core
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnFirstHighlightEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -156,28 +168,6 @@ MonoBehaviour:
   OnPlacePointRemoveEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2290908197955660273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118085362977378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 371cd4567381f5944b21d96835b8dc43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerGrabbableHighlight: 1
-  OnPull:
-    m_PersistentCalls:
-      m_Calls: []
-  StartTargeting:
-    m_PersistentCalls:
-      m_Calls: []
-  StopTargeting:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!54 &1383154799900077604
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -194,19 +184,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2128049832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118085362977378}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d10d31f7ab3f45b6339d2172b3af3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerRole: 0
 --- !u!114 &1604922328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +224,41 @@ MonoBehaviour:
   children: []
   Parent: {fileID: 0}
   NetworkComponents:
-  - {fileID: 2128049832}
   - {fileID: 1604922328}
-  guid: 5fc7a592-3fcd-465e-aa1b-af81ed261964
+  - {fileID: 4898507317197440863}
+  guid: eaffb71f-87a8-4612-b4cb-43033ddcf4a4
+--- !u!114 &5646061255479091971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118085362977378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371cd4567381f5944b21d96835b8dc43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerGrabbableHighlight: 1
+  OnPull:
+    m_PersistentCalls:
+      m_Calls: []
+  StartTargeting:
+    m_PersistentCalls:
+      m_Calls: []
+  StopTargeting:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4898507317197440863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118085362977378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d10d31f7ab3f45b6339d2172b3af3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRole: 0

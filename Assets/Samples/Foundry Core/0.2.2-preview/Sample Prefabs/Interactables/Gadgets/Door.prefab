@@ -97,7 +97,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nativeScript: {fileID: 0}
   disconnectBehaviour: 0
+  allowOwnershipTransfer: 1
+  OnIDChanged:
+    m_PersistentCalls:
+      m_Calls: []
   children: []
+  Parent: {fileID: 0}
+  NetworkComponents:
+  - {fileID: 5682200384275701039}
   guid: a0069a35-a42d-4fe1-9040-05372857e024
 --- !u!1 &5682200384841155772
 GameObject:
