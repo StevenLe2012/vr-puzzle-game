@@ -114,7 +114,6 @@ public class PlayerSpawnManager : NetworkComponent
             Transform _HasChildren = child.GetComponentInChildren<Transform>();
             if (_HasChildren != null)
                 SetGameLayerRecursive(child.gameObject, _layer);
-             
         }
     }
 }

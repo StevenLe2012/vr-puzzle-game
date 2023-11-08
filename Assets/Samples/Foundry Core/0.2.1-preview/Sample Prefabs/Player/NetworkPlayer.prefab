@@ -7455,6 +7455,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Distance Grabber
       objectReference: {fileID: 0}
+    - target: {fileID: 8637148238910303918, guid: 1029fc9ea437c7744adab817e150cd10,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1029fc9ea437c7744adab817e150cd10, type: 3}
 --- !u!114 &2894025908190607020 stripped
