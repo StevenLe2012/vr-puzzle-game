@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -136,7 +136,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,7 +220,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -637,8 +637,7 @@ MonoBehaviour:
   raycaster: {fileID: 3404397091607572636}
   audioSource: {fileID: 1988335068166750120}
   validTeleportSound: {fileID: 8300000, guid: 091455863b5ba784aaca8fd5a67877bb, type: 3}
-  invalidTeleportSound: {fileID: 8300000, guid: 3fd127b48f0ae44488dcf022e0cc7395,
-    type: 3}
+  invalidTeleportSound: {fileID: 8300000, guid: 3fd127b48f0ae44488dcf022e0cc7395, type: 3}
   showTeleportSound: {fileID: 8300000, guid: deea9beff9fc75141bd3fa103846f615, type: 3}
   hideTeleportSound: {fileID: 0}
 --- !u!82 &1988335068166750120

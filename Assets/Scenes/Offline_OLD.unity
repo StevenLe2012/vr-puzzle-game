@@ -328,6 +328,116 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33810857593095e4d821b61b422aed3d, type: 3}
+--- !u!1 &265059547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2749485335300527955, guid: 60d7a93c17943204388265df9708976f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1460531368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &265059550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265059547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efc96875adedcf1478a995be222483c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftPrimaryButtonPressed:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Left Primary Button Pressed
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5e5762a4-be73-4a7b-8f32-0c2c151c6e2e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  LeftSecondaryButtonPressed:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Left Secondary Button Pressed
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 13f08442-e83e-48c9-a113-86457d6467dd
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  RightPrimaryButtonPressed:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Right Primary Button Pressed
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 79be4ac8-ed58-486f-85ff-eafc0567eb8e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 4b79b9e8-0a9f-48d7-8821-0ed17d5e39d5
+        m_Path: '*/{PrimaryButton}'
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Primary Button Pressed
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 64b2231b-d033-43ac-a66e-1fc158f0c472
+        m_Path: <Keyboard>/j
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Primary Button Pressed
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 954bc44e-5dae-49e8-a8cd-5cc9aa7e58e3
+        m_Path: <Keyboard>/space
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Primary Button Pressed
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  RightSecondaryButtonPressed:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Right Secondary Button Pressed
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 1cbf790d-7c7c-45df-80b2-f5a50e9af661
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: d68a4e9b-e01e-4a97-9b66-7bb48f44e7f7
+        m_Path: '*/{SecondaryButton}'
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Secondary Button Pressed
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 11a9b0e5-f86c-4eb1-92ea-a6e8aca8dc0e
+        m_Path: <Keyboard>/k
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Secondary Button Pressed
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  isLeftPrimaryButtonPressed: 0
+  isLeftSecondaryButtonPressed: 0
+  isRightPrimaryButtonPressed: 0
+  isRightSecondaryButtonPressed: 0
 --- !u!1 &338192115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1177,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FoundryPersistent
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749485335630971839, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: controlMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60d7a93c17943204388265df9708976f, type: 3}

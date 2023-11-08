@@ -62,8 +62,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   leverPivot: {x: 0, y: 0, z: 0}
-  leverMaxAngle: 90
-  leverMinAngle: -90
+  leverMaxAngle: 25
+  leverMinAngle: -25
   leverHingeFriction: 10
   positiveOnly: 0
   leverEvent:
@@ -107,7 +107,7 @@ MonoBehaviour:
   NetworkComponents:
   - {fileID: 3174963797306147204}
   - {fileID: 1953775850299542363}
-  guid: c75df527-ef6b-4651-873e-257449fc3c54
+  guid: a9358c44-f667-4868-8da1-b3b3e3009ad1
 --- !u!114 &1953775850299542363
 MonoBehaviour:
   m_ObjectHideFlags: 0

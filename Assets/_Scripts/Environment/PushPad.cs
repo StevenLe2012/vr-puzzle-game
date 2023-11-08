@@ -47,6 +47,7 @@ public class PushPad : NetworkComponent
             _isOnPad = false;
             if (_waitCoroutine != null)
             {
+                print("Stopped Coroutine");
                 StopAllCoroutines();
                 _waitCoroutine = null;
                 transform.position += Vector3.up * moveDistance;
@@ -61,7 +62,12 @@ public class PushPad : NetworkComponent
         yield return new WaitForSeconds(waitForSecondsTillPadTakesEffect);
         if (_isOnPad)
         {
+            print("Coroutine Finished");
             CompleteAction();
+        }
+        else
+        {
+            print("No longer on pad");
         }
     }
 
