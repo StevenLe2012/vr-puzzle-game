@@ -33,8 +33,6 @@ public class ChangeScene : MonoBehaviour
         {
             ChangeToSelectSceneAsync();
         }
-        // var navigator = FoundryApp.GetService<ISceneNavigator>();
-        
     }
 
     private async void ChangeToSelectSceneAsync()

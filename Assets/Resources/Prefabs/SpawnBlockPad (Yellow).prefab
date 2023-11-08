@@ -112,7 +112,17 @@ PrefabInstance:
     - target: {fileID: 1234924230795360986, guid: 738bbc5d3843e2349b16ff7f441fd4d6,
         type: 3}
       propertyPath: m_Name
-      value: PlatformButton (yellow)
+      value: SpawnBlockPad (Yellow)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6775310814213538028, guid: 738bbc5d3843e2349b16ff7f441fd4d6,
+        type: 3}
+      propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
+      value: 1447315657657949927
+      objectReference: {fileID: 0}
+    - target: {fileID: 6775310814213538028, guid: 738bbc5d3843e2349b16ff7f441fd4d6,
+        type: 3}
+      propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
+      value: -1060777733959674166
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 738bbc5d3843e2349b16ff7f441fd4d6, type: 3}

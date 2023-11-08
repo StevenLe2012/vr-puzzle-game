@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Foundry;
+using Foundry.Networking;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PushPad : MonoBehaviour
+public class PushPad : NetworkComponent
 {
     public NetworkEvent<bool> OnPadPushedEvent;
     public NetworkEvent<bool> OnPadRetractedEvent;
@@ -17,6 +19,15 @@ public class PushPad : MonoBehaviour
     
     private bool _isOnPad;
     private Coroutine _waitCoroutine;
+    
+    /* RegisterProperties is called once when the component is added to the networked object on Awake,
+     * this is where we connect up all our properties.*/
+    public override void RegisterProperties(List<INetworkProperty> props)
+    {
+        // OnPadPushedEvent.AddListener(GetComponent<ChangeScene>().ChangeToSelectScene);
+        props.Add(OnPadPushedEvent);   
+        props.Add(OnPadRetractedEvent);   
+    }
 
     private void OnTriggerEnter(Collider other)
     {

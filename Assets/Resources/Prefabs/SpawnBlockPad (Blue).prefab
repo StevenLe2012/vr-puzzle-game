@@ -56,6 +56,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2828844372584938735, guid: 54facc0985bb3744d96d43a884758bd6,
         type: 3}
+      propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
+      value: -839850255172566696
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828844372584938735, guid: 54facc0985bb3744d96d43a884758bd6,
+        type: 3}
+      propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
+      value: -5666304388482855862
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828844372584938735, guid: 54facc0985bb3744d96d43a884758bd6,
+        type: 3}
       propertyPath: OnPadPushedEvent._event.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -182,7 +192,7 @@ PrefabInstance:
     - target: {fileID: 7523257380420863705, guid: 54facc0985bb3744d96d43a884758bd6,
         type: 3}
       propertyPath: m_Name
-      value: PlatformButton (blue)
+      value: SpawnBlockPad (Blue)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54facc0985bb3744d96d43a884758bd6, type: 3}

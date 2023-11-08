@@ -7,6 +7,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2828844372584938735, guid: 54facc0985bb3744d96d43a884758bd6,
+        type: 3}
+      propertyPath: Flags
+      value: 2305
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828844372584938735, guid: 54facc0985bb3744d96d43a884758bd6,
+        type: 3}
+      propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
+      value: 3810682144078728051
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828844372584938735, guid: 54facc0985bb3744d96d43a884758bd6,
+        type: 3}
+      propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
+      value: -2966711875464653157
+      objectReference: {fileID: 0}
     - target: {fileID: 7523257380420863698, guid: 54facc0985bb3744d96d43a884758bd6,
         type: 3}
       propertyPath: m_RootOrder
@@ -65,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 7523257380420863705, guid: 54facc0985bb3744d96d43a884758bd6,
         type: 3}
       propertyPath: m_Name
-      value: PlatformButton (upper)
+      value: PlatformButton (yellow)
       objectReference: {fileID: 0}
     - target: {fileID: 7523257380420863708, guid: 54facc0985bb3744d96d43a884758bd6,
         type: 3}

@@ -2558,12 +2558,12 @@ PrefabInstance:
     - target: {fileID: 6809451504123083948, guid: fbbd8ae636ea0114aa7d0c262a916c69,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6809451504123083948, guid: fbbd8ae636ea0114aa7d0c262a916c69,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.1000004
+      value: -5.1499996
       objectReference: {fileID: 0}
     - target: {fileID: 6809451504123083948, guid: fbbd8ae636ea0114aa7d0c262a916c69,
         type: 3}
@@ -2607,6 +2607,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbbd8ae636ea0114aa7d0c262a916c69, type: 3}
+--- !u!1 &173726093346304952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7656011812592650900, guid: fbbd8ae636ea0114aa7d0c262a916c69,
+    type: 3}
+  m_PrefabInstance: {fileID: 173726093346304951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &173726093346304953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173726093346304952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 2561
+  NetworkGuid:
+    RawGuidValue: 72183cc1e42949f09c6f82886061f48d
+  NestedObjects: []
+  NetworkedBehaviours: []
+  SimulationBehaviours: []
 --- !u!1001 &4461742045296703468
 PrefabInstance:
   m_ObjectHideFlags: 0
