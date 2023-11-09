@@ -10,7 +10,7 @@
         "com.unity.xr.management": "4.3.1",
         "com.unity.xr.openxr": "1.8.2"
       },
-      "hash": "c614ffff7dcde54181cee9a6c574131794e1f026"
+      "hash": "cb81a1ec8685d1e275293e73b91eba1d8759fd6c"
     },
     "com.cyberhub.foundry.networking.fusion": {
       "version": "https://github.com/FoundryXR/FusionNetworkProvider.git?path=package",
