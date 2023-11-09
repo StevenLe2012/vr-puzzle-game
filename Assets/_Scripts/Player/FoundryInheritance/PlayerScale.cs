@@ -12,20 +12,16 @@ public class PlayerScale : NetworkComponent
     // public Avatar avatar;
 
     public bool movementEnabled = true;
-    [SerializeField] private float verticalMovementSpeed = 3f;
     [SerializeField] private float verticalScaleAmount = 3f;
     
     private ButtonInputManager _buttonInput;
     // private IPlayerControlRig controlRig;
-    
-    private NetworkProperty<TrackingMode> trackingMode = new NetworkProperty<TrackingMode>(TrackingMode.OnePoint);
     
     private NetworkProperty<Vector3> virtualScale = new(Vector3.zero);
     private CharacterController controller;
 
     public override void RegisterProperties(List<INetworkProperty> properties)
     {
-        properties.Add(trackingMode);
         properties.Add(virtualScale);
     }
 

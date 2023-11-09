@@ -11,12 +11,19 @@ public class PlayerSpawnManager : NetworkComponent
     [SerializeField] private Vector3 scaleP1 = new Vector3(10, 10, 10);
 
     private NetworkProperty<int> _avatarSpawned = new (0);
+    private NetworkProperty<int> _layerIndex = new(0);
     // private NetworkProperty<Vector3> _playerSize = new (new Vector3(1, 1, 1));
     
     public int AvatarSpawned
     {
         get => _avatarSpawned.Value;
         set => _avatarSpawned.Value = value;
+    }
+    
+    public int LayerIndex
+    {
+        get => _layerIndex.Value;
+        set => _layerIndex.Value = value;
     }
     
     // public Vector3 PlayerSize
@@ -48,7 +55,8 @@ public class PlayerSpawnManager : NetworkComponent
     private void SpawnP1()
     {
         transform.position = _playerSpawnPointsManager.SpawnPointP1.position;
-        SetGameLayerRecursive(gameObject, LayerMask.NameToLayer("FoundryPlayer1"));
+        // SetGameLayerRecursive(gameObject, LayerMask.NameToLayer("FoundryPlayer1"));
+        LayerIndex = LayerMask.NameToLayer("FoundryPlayer1");
         Invoke(nameof(MakeOverLord), 1f);
         AvatarSpawned = 1;
     }
@@ -57,13 +65,21 @@ public class PlayerSpawnManager : NetworkComponent
     private void SpawnP2()
     {
         transform.position = _playerSpawnPointsManager.SpawnPointP2.position;
-        SetGameLayerRecursive(gameObject, LayerMask.NameToLayer("FoundryPlayer2"));
+        // SetGameLayerRecursive(gameObject, LayerMask.NameToLayer("FoundryPlayer2"));
+        LayerIndex = LayerMask.NameToLayer("FoundryPlayer2");
         Invoke(nameof(MakeTopDownCharacter), 1f);
         AvatarSpawned = 2;
     }
     
     public override void RegisterProperties(List<INetworkProperty> properties)
     {
+        _layerIndex.OnValueChanged += layerIndex =>
+        {
+            print($"RECURSIVE CALL of {gameObject.name} was changed to: {layerIndex}");
+            SetGameLayerRecursive(gameObject, layerIndex);
+        };
+        properties.Add(_layerIndex);
+        
         _avatarSpawned.OnChanged += SpawnSelectedAvatar;
         properties.Add(_avatarSpawned);
         // properties.Add(_playerSize);
@@ -114,7 +130,6 @@ public class PlayerSpawnManager : NetworkComponent
             Transform _HasChildren = child.GetComponentInChildren<Transform>();
             if (_HasChildren != null)
                 SetGameLayerRecursive(child.gameObject, _layer);
-             
         }
     }
 }
