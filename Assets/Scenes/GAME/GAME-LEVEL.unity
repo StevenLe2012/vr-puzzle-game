@@ -904,6 +904,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 683303679}
     m_Modifications:
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: guid
+      value: f1a9700c-96b0-4af1-aa7a-7067dcc2d9b2
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: BlueBox (1)
@@ -1967,6 +1971,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 999392890}
     m_Modifications:
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: guid
+      value: 30615ac9-c989-4a64-8a86-83b66645d8c8
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: BlueBox (4)
@@ -2637,6 +2645,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 999392890}
     m_Modifications:
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: guid
+      value: 939d1a14-a39f-44eb-8a17-e63f468fc98d
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: BlueBox (3)
@@ -3091,6 +3103,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 852820103}
     m_Modifications:
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: guid
+      value: 1e5d14bc-1a39-425e-8b1f-e52dd6653c6a
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: BlueBox (5)
@@ -3683,6 +3699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
       value: 2703372404028426124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
+        type: 3}
+      propertyPath: guid
+      value: 3b16c49e-30bd-4db8-9da2-deaa6205064b
       objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
@@ -4466,6 +4487,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468768857}
     m_Modifications:
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: guid
+      value: 8dc0513f-3ff8-4566-838e-35fe3cd20107
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: BlueBox (2)
@@ -5392,6 +5417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
       value: 2703372404028426124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
+        type: 3}
+      propertyPath: guid
+      value: da4f5034-02e6-43c7-aa79-fc99865c0b7e
       objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
@@ -6847,6 +6877,11 @@ PrefabInstance:
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
       value: 2703372404028426124
       objectReference: {fileID: 0}
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
+        type: 3}
+      propertyPath: guid
+      value: 11fa36ab-2c14-4236-a3f8-983337f01a26
+      objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
       propertyPath: m_Name
@@ -8233,6 +8268,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 683303679}
     m_Modifications:
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
+        type: 3}
+      propertyPath: guid
+      value: 3604641c-bab6-41fb-9997-25e112bc4b91
+      objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
       propertyPath: m_Name
@@ -8703,6 +8743,11 @@ PrefabInstance:
         type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
       value: 2703372404028426124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
+        type: 3}
+      propertyPath: guid
+      value: 7b317920-28f5-4dd6-aeff-1b2695085c3a
       objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
@@ -9702,6 +9747,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 683303679}
     m_Modifications:
+    - target: {fileID: 1604922329, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      propertyPath: guid
+      value: 32af9f08-e663-4755-852e-1f644dd639c7
+      objectReference: {fileID: 0}
     - target: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_Name
       value: BlueBox
@@ -9749,21 +9798,6 @@ PrefabInstance:
     - target: {fileID: 4035765028099436, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066323111916325628, guid: 5527826a6315a224d850675a730c4f62,
-        type: 3}
-      propertyPath: Flags
-      value: 2561
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066323111916325628, guid: 5527826a6315a224d850675a730c4f62,
-        type: 3}
-      propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
-      value: -6755169082660037800
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066323111916325628, guid: 5527826a6315a224d850675a730c4f62,
-        type: 3}
-      propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
-      value: -3806284410572279621
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5527826a6315a224d850675a730c4f62, type: 3}
@@ -11848,6 +11882,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 683303679}
     m_Modifications:
+    - target: {fileID: 4386719894722652079, guid: 843d8e9779976674785db0dc8b9391f1,
+        type: 3}
+      propertyPath: guid
+      value: fdd82d4b-3282-4bb9-bded-efd74b0ed184
+      objectReference: {fileID: 0}
     - target: {fileID: 4387414664391132692, guid: 843d8e9779976674785db0dc8b9391f1,
         type: 3}
       propertyPath: m_Name
