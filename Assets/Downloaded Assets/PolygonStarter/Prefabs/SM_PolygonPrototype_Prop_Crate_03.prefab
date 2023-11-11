@@ -258,7 +258,7 @@ MonoBehaviour:
   NetworkComponents:
   - {fileID: 1604922328}
   - {fileID: 4898507317197440863}
-  guid: f9acd5c9-d62a-4698-9db3-ecb4f11c5ab4
+  guid: 8dcf667c-01de-4a62-982c-a75d3c941df9
 --- !u!114 &4898507317197440863
 MonoBehaviour:
   m_ObjectHideFlags: 0
