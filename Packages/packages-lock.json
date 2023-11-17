@@ -10,16 +10,16 @@
         "com.unity.xr.management": "4.3.1",
         "com.unity.xr.openxr": "1.8.2"
       },
-      "hash": "19e78717553a302b6ded5dfaeaa4c77103585e26"
+      "hash": "c614ffff7dcde54181cee9a6c574131794e1f026"
     },
     "com.cyberhub.foundry.networking.fusion": {
       "version": "https://github.com/FoundryXR/FusionNetworkProvider.git?path=package",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.cyberhub.foundry.core": "0.2.1-preview"
+        "com.cyberhub.foundry.core": "0.2.2-preview"
       },
-      "hash": "84440c8650ef3566b1b8a14ea4812c6abe6fe22f"
+      "hash": "d7631ed1ca09ef8c03ea7afe2e199433ff960cfb"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
