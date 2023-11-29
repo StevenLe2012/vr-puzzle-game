@@ -12,7 +12,7 @@ public class PlayerJump : NetworkComponent
     [SerializeField] private float jumpHeight = 1f;
     [SerializeField] private LayerMask groundLayers;
 
-    private float _gravity = Physics.gravity.y;
+    private float _gravity = -9.81f;
     private Vector3 _movement;
     private ButtonInputManager _buttonInput;
     private CharacterController controller;
@@ -61,6 +61,6 @@ public class PlayerJump : NetworkComponent
 
     private bool IsGrounded()
     {
-        return Physics.CheckSphere(transform.position, 0.05f, groundLayers);
+        return Physics.CheckSphere(transform.position, 0.1f, groundLayers);
     }
 }

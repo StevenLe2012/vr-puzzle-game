@@ -6961,7 +6961,7 @@ MonoBehaviour:
   jumpHeight: 1
   groundLayers:
     serializedVersion: 2
-    m_Bits: 129
+    m_Bits: 2177
 --- !u!1 &8279761453518922694
 GameObject:
   m_ObjectHideFlags: 0
