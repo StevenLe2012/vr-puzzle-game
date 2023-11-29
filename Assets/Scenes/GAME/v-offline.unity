@@ -432,6 +432,14 @@ MonoBehaviour:
         m_Groups: 
         m_Action: Right Secondary Button Pressed
         m_Flags: 0
+      - m_Name: 
+        m_Id: 9f6b6a7d-9865-4681-8cc2-c68cc4efd134
+        m_Path: <Keyboard>/leftShift
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Secondary Button Pressed
+        m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: 0}
   isLeftPrimaryButtonPressed: 0
