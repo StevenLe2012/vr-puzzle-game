@@ -10622,6 +10622,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3404397091607572636, guid: f97a1cb108c51b44d8253bb45d71939d,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404397091607572636, guid: f97a1cb108c51b44d8253bb45d71939d,
+        type: 3}
       propertyPath: velocity.x
       value: -0.5
       objectReference: {fileID: 0}
@@ -10766,10 +10771,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7095252216902003857, guid: f97a1cb108c51b44d8253bb45d71939d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8200401774459379207, guid: f97a1cb108c51b44d8253bb45d71939d,
         type: 3}
       propertyPath: m_Name
       value: Teleport Raycaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200401774459379207, guid: f97a1cb108c51b44d8253bb45d71939d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682008374262202407, guid: f97a1cb108c51b44d8253bb45d71939d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f97a1cb108c51b44d8253bb45d71939d, type: 3}

@@ -1118,6 +1118,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2749485333977719419, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749485334002090577, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749485334837188168, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749485335075149117, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2749485335148687952, guid: 60d7a93c17943204388265df9708976f,
         type: 3}
       propertyPath: m_RootOrder
@@ -1181,6 +1201,31 @@ PrefabInstance:
     - target: {fileID: 2749485335630971839, guid: 60d7a93c17943204388265df9708976f,
         type: 3}
       propertyPath: controlMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619969731872796352, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822248360255547620, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350894795573191145, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924796905235364803, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461117961830746419, guid: 60d7a93c17943204388265df9708976f,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
